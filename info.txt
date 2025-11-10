@@ -1,0 +1,15 @@
+{
+ "Name": "CookiStocker",
+ "ID": "CookiStocker",
+ "Author": "z",
+ "Description": "Automatic stock trading mod",
+ "ModVersion": 3.02,
+ "GameVersion": 2.053,
+ "Date": "14/10/2025",
+ "Dependencies": [
+  "CCSE"
+ ],
+ "Disabled": 0,
+ "AllowSteamAchievs": 1,
+ "Workshop": "2992885336"
+}
