@@ -19,7 +19,7 @@
 		var stockerAutoBuyAdditionalBrokers = false
 		
 		// Increases number of warehouses in sync with the highest raw CPS during this session
-		var stockerExponential = true;
+		var stockerExponential = false;
 
 		// The ratio of the highest raw CPS to the original raw CPS is raised to this power when Exponential Warehouses is on
 		var stockExponentialPower = 1.0;
@@ -1828,3 +1828,4 @@ CookiStocker.reset = function(hard) {
 		Game.Achievements['Bose-Einstein Condensed Assets'].won = 0;
 	}
 }
+
