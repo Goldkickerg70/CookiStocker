@@ -1,19 +1,3 @@
-* fixes the “`… is not a function`” cascades by defining all methods before `init` ever runs,
-* removes every reference to custom achievements (and any `Game.Win(...)` or `Game.Achievements[...]` touch),
-* guards all CCSE calls so the menu/stat wiring never crashes if CCSE isn’t loaded yet,
-* ensures `ReplaceGameMenu`, `TradingStats`, `save`, `load`, etc. exist at the moment they’re first called,
-* keeps the optional “extra trading stats” UI inline (correctly),
-* avoids timers piling up during ascension/saves.
-
-Paste this file as your `main.js` (or whatever you load as the mod script). No other files needed.
-
-```javascript
-/* CookiStocker — single-file build (achievements removed)
-   - Fixes: ReplaceGameMenu/TradingStats/save not a function, CCSE timing, autosave soft-lock
-   - Safe without CCSE; enhances UI when CCSE exists.
-   - Optional extra stats included.
-*/
-
 //////////////////////////////
 // ----- USER OPTIONS -----
 //////////////////////////////
@@ -1279,4 +1263,5 @@ Game.registerMod('CookiStocker', {
 });
 
 ```
+
 
