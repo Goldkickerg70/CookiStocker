@@ -1,5 +1,3 @@
-Got you. I rewired the mod into a **single self-contained file** that:
-
 * fixes the “`… is not a function`” cascades by defining all methods before `init` ever runs,
 * removes every reference to custom achievements (and any `Game.Win(...)` or `Game.Achievements[...]` touch),
 * guards all CCSE calls so the menu/stat wiring never crashes if CCSE isn’t loaded yet,
@@ -1281,3 +1279,4 @@ Game.registerMod('CookiStocker', {
 });
 
 ```
+
