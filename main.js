@@ -1261,7 +1261,3 @@ Game.registerMod('CookiStocker', {
 		}, stockerLoopFrequency);
 	},
 });
-
-```
-
-
