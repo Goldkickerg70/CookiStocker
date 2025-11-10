@@ -886,3 +886,4 @@ Game.registerMod('CookiStocker',{
 }
 else setTimeout(waitForGame,100)
 })
+
