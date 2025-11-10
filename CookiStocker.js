@@ -13,13 +13,13 @@
 		var stockerCookiesThreshold = 0.05;
 
 		// Buy all necessary brokers as soon as we can afford them
-		var stockerAutoBuyMinimumBrokers = false
+		var stockerAutoBuyMinimumBrokers = true
 		
 		// Buy additional brokers as soon as we can afford them
-		var stockerAutoBuyAdditionalBrokers = false
+		var stockerAutoBuyAdditionalBrokers = true
 		
 		// Increases number of warehouses in sync with the highest raw CPS during this session
-		var stockerExponential = false;
+		var stockerExponential = true;
 
 		// The ratio of the highest raw CPS to the original raw CPS is raised to this power when Exponential Warehouses is on
 		var stockExponentialPower = 1.0;
@@ -28,7 +28,7 @@
 		var stockerTransactionNotifications = true;
 
 		// Make regular profit reports
-		var stockerActivityReport = true
+		var stockerActivityReport = false
 			// How often to make regular reports in ms (one hour by default)
 			var stockerActivityReportFrequency = 1000 * 60 * 60
 
@@ -1828,5 +1828,3 @@ CookiStocker.reset = function(hard) {
 		Game.Achievements['Bose-Einstein Condensed Assets'].won = 0;
 	}
 }
-
-
