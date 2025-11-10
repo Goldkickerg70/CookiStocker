@@ -28,7 +28,7 @@
 		var stockerTransactionNotifications = true;
 
 		// Make regular profit reports
-		var stockerActivityReport = false
+		var stockerActivityReport = true
 			// How often to make regular reports in ms (one hour by default)
 			var stockerActivityReportFrequency = 1000 * 60 * 60
 
@@ -1828,4 +1828,5 @@ CookiStocker.reset = function(hard) {
 		Game.Achievements['Bose-Einstein Condensed Assets'].won = 0;
 	}
 }
+
 
